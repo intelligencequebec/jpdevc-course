@@ -1,0 +1,19 @@
+title: jpdevc
+description: >-
+  This is my own book about what i have learning and get about knowledge in my
+  whole life but i send to you this special quickly start owner book as
+  bibliography on the Internet If you want Go Live as well #jpdevc
+template:
+  repo: jpdevc-template
+  name: jpdevc
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
